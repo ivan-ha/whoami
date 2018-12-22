@@ -13,8 +13,6 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve"
-    // FIXME: to suspress TS error, not sure if that's correct way
-    // "noImplicitAny": false
   },
   "include": ["src"]
 }
