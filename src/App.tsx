@@ -1,9 +1,15 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverflow:true
 import ReactFullpage from "@fullpage/react-fullpage";
 
+import FindMeOn from "./Components/FindMeOn";
+import Introduction from "./Components/Introduction";
+import WhoAmI from "./Components/WhoAmI";
 import "./styles.css";
+
+type ReactFullPageRenderProp = {
+  state: any;
+  fullpageApi: any;
+};
 
 const fullpageOptions = {
   anchors: ["firstPage", "secondPage", "thirdPage"],
@@ -12,45 +18,19 @@ const fullpageOptions = {
   scrollOverflow: true
 };
 
-const FullpageWrapper = fullpageProps => (
+const App = () => (
   <ReactFullpage
-    {...fullpageProps}
-    render={({ state, fullpageApi }) => {
-      console.log("render prop change", state); // eslint-disable-line no-console
-
-      if (state.callback === "onLeave") {
-        if (state.direction === "down") {
-          console.log("going down..." + state.origin.index);
-        }
-      }
+    {...fullpageOptions}
+    render={({ fullpageApi }: ReactFullPageRenderProp) => {
       return (
         <div id="fullpage-wrapper">
-          <div className="section section1">
-            <h3>Section 1</h3>
-            <button onClick={() => fullpageApi.moveSectionDown()}>
-              Move down
-            </button>
-          </div>
-          <div className="section">
-            <div className="slide">
-              <h3>Slide 2.1</h3>
-            </div>
-            <div className="slide">
-              <h3>Slide 2.2</h3>
-            </div>
-            <div className="slide">
-              <h3>Slide 2.3</h3>
-            </div>
-          </div>
-          <div className="section">
-            <h3>Section 3</h3>
-          </div>
+          <WhoAmI onButtonClick={() => fullpageApi.moveSectionDown()} />
+          <Introduction />
+          <FindMeOn />
         </div>
       );
     }}
   />
 );
-
-const App = () => <FullpageWrapper {...fullpageOptions} />;
 
 export default App;
