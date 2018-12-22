@@ -12,7 +12,7 @@ type ReactFullPageRenderProp = {
 };
 
 const fullpageOptions = {
-  anchors: ["firstPage", "secondPage", "thirdPage"],
+  anchors: ["whoAmI", "introduction", "findMeOn"],
   sectionsColor: ["#282c34", "#ff5f45", "#0798ec"],
   callbacks: ["onLeave", "afterLoad"],
   scrollOverflow: true

@@ -8,14 +8,14 @@ const StyledMenu = styled.ul`
 
 const Menu = () => (
   <StyledMenu id="myMenu">
-    <li data-menuanchor="firstPage">
-      <a href="#firstPage">First section</a>
+    <li data-menuanchor="whoAmI">
+      <a href="#whoAmI">First section</a>
     </li>
-    <li data-menuanchor="secondPage">
-      <a href="#secondPage">Second section</a>
+    <li data-menuanchor="introduction">
+      <a href="#introduction">Second section</a>
     </li>
-    <li data-menuanchor="thirdPage">
-      <a href="#thirdPage">Third section</a>
+    <li data-menuanchor="findMeOn">
+      <a href="#findMeOn">Third section</a>
     </li>
   </StyledMenu>
 );
