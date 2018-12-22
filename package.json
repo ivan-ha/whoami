@@ -8,6 +8,7 @@
     "@types/node": "10.12.18",
     "@types/react": "16.7.17",
     "@types/react-dom": "16.0.11",
+    "@types/styled-components": "^4.1.4",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-scripts": "2.1.1",
