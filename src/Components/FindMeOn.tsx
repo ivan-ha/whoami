@@ -1,8 +1,10 @@
 import React from "react";
 
+import Title from "./Title";
+
 const FindMeOn = () => (
   <div className="section">
-    <h3>Section 3</h3>
+    <Title text="Section 3" />
   </div>
 );
 
