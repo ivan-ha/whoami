@@ -1,5 +1,6 @@
 import React from "react";
 
+import Button from "./Button";
 import Title from "./Title";
 
 type PropsType = {
@@ -9,7 +10,7 @@ type PropsType = {
 const whoAmI = ({ onButtonClick }: PropsType) => (
   <div className="section section1">
     <Title text="Ivan Ha" />
-    <button onClick={onButtonClick}>Move down</button>
+    <Button onClick={onButtonClick} text="Move down" />
   </div>
 );
 
