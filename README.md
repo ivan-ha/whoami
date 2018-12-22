@@ -1,4 +1,4 @@
-# # ivan-ha/whoami
+# ivan-ha/whoami
 
 Test site to try out Typescript.
 
