@@ -1,0 +1,6 @@
+{
+  "linters": {
+    "**/*.md": ["prettier --write", "git add"],
+    "**/*.{js,ts,tsx}": ["import-sort --write", "prettier --write", "git add"]
+  }
+}
