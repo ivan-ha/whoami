@@ -1,10 +1,11 @@
-import React from "react";
+import "./styles.css";
+
 import ReactFullpage from "@fullpage/react-fullpage";
+import React from "react";
 
 import FindMeOn from "./Components/FindMeOn";
 import Introduction from "./Components/Introduction";
 import WhoAmI from "./Components/WhoAmI";
-import "./styles.css";
 
 type ReactFullPageRenderProp = {
   state: any;
@@ -15,7 +16,7 @@ const fullpageOptions = {
   anchors: ["whoAmI", "introduction", "findMeOn"],
   sectionsColor: ["#282c34", "#ff5f45", "#0798ec"],
   callbacks: ["onLeave", "afterLoad"],
-  scrollOverflow: true
+  scrollOverflow: true,
 };
 
 const App = () => (
