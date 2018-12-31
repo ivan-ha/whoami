@@ -8,14 +8,17 @@ type PropsType = {
 
 const StyledButton = styled.button`
   padding: 0.93em 1.87em;
-  background: #35495e;
+  background: #caff45;
   border-radius: 5px;
   border-color: transparent;
   display: block;
-  color: #fff;
+  color: #262626;
   margin: 0 auto;
   cursor: pointer;
-  font-size: 0.85em;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+  outline: none;
 `;
 
 const Button = ({ onClick, text }: PropsType) => (

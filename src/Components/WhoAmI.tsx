@@ -8,7 +8,7 @@ type PropsType = {
 };
 
 const whoAmI = ({ onButtonClick }: PropsType) => (
-  <div className="section section1">
+  <div className="section">
     <Title text="Ivan Ha" />
     <Button onClick={onButtonClick} text="Move down" />
   </div>

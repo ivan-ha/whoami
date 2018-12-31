@@ -1,5 +1,3 @@
-import "./styles.css";
-
 import ReactFullpage from "@fullpage/react-fullpage";
 import React from "react";
 
@@ -14,7 +12,7 @@ type ReactFullPageRenderProp = {
 
 const fullpageOptions = {
   anchors: ["whoAmI", "introduction", "findMeOn"],
-  sectionsColor: ["#282c34", "#ff5f45", "#0798ec"],
+  sectionsColor: ["#ff5f45", "#02ceba", "#0798ec"],
   callbacks: ["onLeave", "afterLoad"],
   scrollOverflow: true,
 };
