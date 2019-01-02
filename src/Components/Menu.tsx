@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import IconLink from "./IconLink";
+
 const StyledMenu = styled.ul`
   position: fixed;
   top: 20px;
@@ -10,6 +12,10 @@ const StyledMenu = styled.ul`
   padding: 0;
   margin: 0;
 `;
+
+type StyledItemProps = {
+  noHover?: boolean;
+};
 
 const StyledItem = styled.li`
   display: inline-block;
@@ -28,7 +34,8 @@ const StyledItem = styled.li`
   }
 
   &:hover {
-    background: rgba(0, 0, 0, 0.3);
+    background: ${(props: StyledItemProps) =>
+      props.noHover ? "" : "rgba(0,0,0,0.3)"};
   }
 
   &.active a {
@@ -55,6 +62,13 @@ const Menu = (props: MenuProps) => (
         <StyledLink href={`#${item.anchor}`}>{item.text}</StyledLink>
       </StyledItem>
     ))}
+    <StyledItem noHover>
+      <IconLink
+        src="/images/github.svg"
+        href="https://github.com/ivan-ha/whoami"
+        small
+      />
+    </StyledItem>
   </StyledMenu>
 );
 
