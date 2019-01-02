@@ -23,6 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "bump-version": "standard-version --skip.commit=true --skip.tag=true",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
@@ -37,8 +38,7 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged",
-      "pre-deploy": "yarn build"
+      "pre-commit": "lint-staged"
     }
   },
   "devDependencies": {
