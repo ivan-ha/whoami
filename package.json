@@ -1,6 +1,7 @@
 {
   "name": "whoami",
   "version": "0.1.0",
+  "homepage": "https://ivan-ha.github.io/whoami",
   "private": true,
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.10",
