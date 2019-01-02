@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/whoami/static/css/main.42c3a2d6.chunk.css"
   },
   {
-    "revision": "28cce856ac32b81347fecd540339fb50",
+    "revision": "769c9b2f7218a78e3ce76f8b209d9bc9",
     "url": "/whoami/index.html"
   }
 ];
