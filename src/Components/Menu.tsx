@@ -3,32 +3,32 @@ import styled from "styled-components";
 
 const StyledMenu = styled.ul`
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 20px;
+  right: 20px;
   height: 40px;
   z-index: 70;
-  width: 100%;
   padding: 0;
   margin: 0;
 `;
 
 const StyledItem = styled.li`
   display: inline-block;
-  margin: 10px;
-  color: #000;
-  background: #fff;
-  background: rgba(255, 255, 255, 0.5);
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
+  font-size: 18px;
 
-  &.active {
-    background: #666;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
+  &.active :after {
+    content: "";
+    margin: 4px 0;
+    height: 2px;
+    background: #fff;
+    display: block;
+    bottom: -6px;
+    left: 0;
+    right: 0;
+    display: block;
   }
 
   &:hover {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.3);
   }
 
   &.active a {
