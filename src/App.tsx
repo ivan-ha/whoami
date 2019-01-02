@@ -13,7 +13,6 @@ type ReactFullPageRenderProp = {
 const fullpageOptions = {
   anchors: ["whoAmI", "introduction", "findMeOn"],
   sectionsColor: ["#ff5f45", "#02ceba", "#0798ec"],
-  scrollOverflow: true,
   navigation: true,
 };
 
