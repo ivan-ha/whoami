@@ -1,24 +1,28 @@
 import React from "react";
 import styled from "styled-components";
 
+import github from "../Images/github.svg";
+import linkedin from "../Images/linkedin.svg";
+import medium from "../Images/medium.svg";
+import twitter from "../Images/twitter.svg";
 import IconLink from "./IconLink";
 import Title from "./Title";
 
 const data = [
   {
-    src: "/images/github.svg",
+    src: github,
     href: "https://github.com/ivan-ha",
   },
   {
-    src: "/images/linkedin.svg",
+    src: linkedin,
     href: "https://www.linkedin.com/in/ivan-ha",
   },
   {
-    src: "/images/medium.svg",
+    src: medium,
     href: "https://medium.com/@ivan.ha",
   },
   {
-    src: "/images/twitter.svg",
+    src: twitter,
     href: "https://twitter.com/ivanhahk",
   },
 ];

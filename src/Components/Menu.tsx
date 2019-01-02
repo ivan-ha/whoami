@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+import github from "../Images/github.svg";
 import IconLink from "./IconLink";
 
 const StyledMenu = styled.ul`
@@ -63,11 +64,7 @@ const Menu = (props: MenuProps) => (
       </StyledItem>
     ))}
     <StyledItem noHover>
-      <IconLink
-        src="/images/github.svg"
-        href="https://github.com/ivan-ha/whoami"
-        small
-      />
+      <IconLink src={github} href="https://github.com/ivan-ha/whoami" small />
     </StyledItem>
   </StyledMenu>
 );
