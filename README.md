@@ -11,6 +11,12 @@ yarn
 yarn start
 ```
 
+## Deployment
+
+```sh
+yarn deploy
+```
+
 ## Tech stack
 
 - typescript
